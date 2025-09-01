@@ -4,6 +4,7 @@
 
 ## 🌟 Features Overview
 
+
 ### ✨ Enhanced Features
 - **Multi-Resume Upload**: Process up to 10 CV files simultaneously (1GB total limit)
 - **Real-time Dashboard**: Interactive analytics with Plotly visualizations
@@ -14,12 +15,18 @@
 - **Batch Processing**: Efficient handling of multiple documents
 - **Performance Ranking**: Compare and rank all uploaded resumes
 
+<img width="1920" height="932" alt="image" src="https://github.com/user-attachments/assets/5c37ded8-c4f7-4b65-95da-675d78b9d3c6" />
+
+
 ### 📊 Dashboard Features
 - Real-time metrics and KPIs
 - Interactive charts and visualizations
 - Comparative analysis between resumes
 - Performance ranking system
 - Export capabilities for reports
+
+<img width="1706" height="936" alt="image" src="https://github.com/user-attachments/assets/ade9a17d-e396-4bdd-b8f7-68e15424ca90" />
+<img width="1904" height="442" alt="image" src="https://github.com/user-attachments/assets/ce705ece-c27f-4d9d-9073-32111cd496da" />
 
 ## 🛠️ Prerequisites
 
