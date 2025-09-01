@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import PyPDF2 as pdf
+from PyPDF2 import PdfReader
 try:
     import google.generativeai as genai
 except ImportError:
@@ -114,7 +114,7 @@ class ATSAnalyzer:
     def extract_pdf_text(self, uploaded_file):
         """Extract text from PDF file"""
         try:
-            reader = pdf.PdfReader(uploaded_file)
+            reader = PdfReader(uploaded_file)
             text = ""
             for page in reader.pages:
                 text += page.extract_text()
