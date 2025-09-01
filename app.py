@@ -619,3 +619,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+git add requirements.txt packages.txt
+git commit -m "Update dependencies for deployment"
+git push
