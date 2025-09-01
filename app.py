@@ -1,7 +1,12 @@
 import streamlit as st
-import google.generativeai as genai
 import os
 import PyPDF2 as pdf
+try:
+    import google.generativeai as genai
+except ImportError:
+    print("Installing google-generativeai package...")
+    import subprocess
+    subprocess.check_call(["pip", "install", "google-generativeai"])
 from dotenv import load_dotenv
 from fpdf import FPDF
 import pandas as pd
@@ -25,7 +30,18 @@ warnings.filterwarnings('ignore')
 load_dotenv()
 
 # Configure Google API
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+api_key = os.getenv("GOOGLE_API_KEY")
+if not api_key:
+    st.error("❌ GOOGLE_API_KEY not found in environment variables")
+    st.info("Please set your Google API Key in the .env file or in your environment variables")
+    st.stop()
+
+try:
+    genai.configure(api_key=api_key)
+except Exception as e:
+    st.error(f"❌ Error configuring Google API: {str(e)}")
+    st.info("Please check your API key and ensure it's valid")
+    st.stop()
 
 # Page configuration
 st.set_page_config(
