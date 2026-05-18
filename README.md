@@ -469,13 +469,6 @@ CMD ["streamlit", "run", "app.py", "--server.headless", "true"]
 - [TensorFlow Guides](https://www.tensorflow.org/guide)
 - [Plotly Documentation](https://plotly.com/python/)
 
-### Contact Information
-
-**Developer**: Anubhav Raj
-- **GitHub**: [github.com/Anubhx](https://github.com/Anubhx)
-- **LinkedIn**: [linkedin.com/in/anubhax](https://linkedin.com/in/anubhax/)
-- **Email**: [anubhav0427@gmail.com](mailto:anubhav0427@gmail.com)
-
 ## 📝 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
